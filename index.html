@@ -1,0 +1,1035 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+              integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+              crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" href="images\new logo for website.svg">
+        <title>Designer roginth</title>
+        <!--model viewer for 3d element-->
+        <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+        <!--scroll animation aos -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <!--google fonts-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Yatra+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&family=Ubuntu:wght@300&display=swap"
+              rel="stylesheet">
+    </head>
+
+    <body>
+
+        <div class="splash  ">
+            <img class="my-5 center mx-auto" src="images/new logo for website.svg" alt="hello" width="90px">
+            <img id="helloImage" class="center hello " src="images/Artboard 1-80.jpg" alt="hello">
+            <p class=" text-gradiant  hm1  my-2 center">Welcome to my website</p>
+        </div>
+
+
+
+
+        <div id="particles-js">
+        </div>
+
+        <div>
+            <nav class="navbar  navbar-expand-lg   navbar-light bglight">
+                <div class="container">
+                    <a class="navbar-brand logo-text text-gradiant2" href="#"> roginth.
+                        <img src="https://image.flaticon.com/icons/png/512/891/891448.png" alt="new" width="28px">
+                    </a>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                        <img src="https://img.icons8.com/color/48/000000/menu--v4.png" width="26px" />
+                    </button>
+
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                        <div class="navbar navbar-light bglight">
+                            <a class="nav-link mx-2 textMuted" aria-current="page" data-scroll href="#home">Home</a>
+                            <a class="nav-link mx-2 textMuted" data-scroll href="#skills">Skills</a>
+                            <a class="nav-link mx-2 textMuted" data-scroll href="#projects">Project</a>
+                            <a class="nav-link mx-2 textMuted disabled" href="#" tabindex="-1"
+                               aria-disabled="true">Experience</a>
+                            <a class="nav-link mx-2 textMuted" data-scroll href="#aboutUs">About me</a>
+                            <a class="btn btn-outline-primary  mx-2 " data-scroll tabindex="-1"
+                               href="https://drive.google.com/file/d/1biwdJAw0HQ9B5QgT5vft5qSDz_Ne-1Wo/view?usp=sharing">
+                                view my resume</a>
+                            <a class="btn btn-primary  mx-2 text-light displaynone   " data-bs-toggle="offcanvas"
+                               href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                                Profile.
+                            </a>
+
+                            <img title="Change Mode"
+                                 onclick="changeImage();changeBackgroundImages();changeBackgroundImages1();changeBackgroundImages2()"
+                                 class="darkmode my-auto" id="images"
+                                 src="https://img.icons8.com/material-rounded/24/000000/sun--v2.png" alt="darkmode">
+                        </div>
+                    </div>
+                    <!-- <img class="darkmode my-auto" src="https://img.icons8.com/material-rounded/24/000000/sun--v2.png" alt="darkmode"> -->
+
+                </div>
+
+
+            </nav>
+
+            <section id="home">
+
+
+                <div class="">
+
+                    <video class="hello-video" src="./images/Comp 1-1.mp4" autoplay loop></video>
+                    <!-- <img class="welcome-landcap" src="./images/3223769.jpg" alt=""> -->
+                    <!--model viewer -->
+                    <!-- <model-viewer class="size-of-3d  blue-gradiant"
+                                  src="images/model_obj_3fYwAqIqkHK_1DGhPApEUh9/model.gltf"
+                                  alt="A 3D model of an astronaut" auto-rotate camera-controls></model-viewer> -->
+
+                </div>
+
+
+
+            </section>
+            <div class="container">
+                <!--profile-->
+                <div class="offcanvas offcanvas-start bglignt" tabindex="-1" id="offcanvasExample"
+                     aria-labelledby="offcanvasExampleLabel">
+
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title text-gradiant2" id="offcanvasExampleLabel">Welcome!</h5>
+                        <!-- <button type="button" class="btn-close text-reset" data-bs-dimdiss="offcanvas" aria-label="Close"></button> -->
+                    </div>
+                    <div class="offcanvas-body bglignt justify-content-center">
+                        <div class=" ">
+                            <div class="  position">
+                                <img class=" d-block p-2 center size " src="images/profile pic.png" alt="">
+
+                                <h5 class="textMuted center  ">Roginth B</h5>
+                                <p class="text-muted text-primary my-2 center  ">Designer / Developer</p>
+                                <div class=" center">
+                                    <a class="btn btn-outline-primary" data-scroll tabindex="-1"
+                                       href="https://drive.google.com/file/d/1biwdJAw0HQ9B5QgT5vft5qSDz_Ne-1Wo/view?usp=sharing">
+                                        view my resume</a>
+                                </div>
+                                <div class="flex mx-2">
+                                    <div class="box m-4 bglight corner ">
+                                        <a href="https://www.instagram.com/roginth_b/?hl=en" target="_blank">
+                                            <img class="d-block center padding-top" width="30px"
+                                                 src="https://image.flaticon.com/icons/png/512/2111/2111463.png"
+                                                 alt="">
+                                        </a>
+                                        <div class=" re-text ">
+                                            <span class="font-size-12 textMuted ">Instagram</span>
+                                        </div>
+
+                                    </div>
+                                    <div class="box m-4  bglight   corner ">
+                                        <a href="https://www.linkedin.com/in/rohinth-b-35ba211a8/" target="_blank">
+                                            <img class="d-block center padding-top" width="30px"
+                                                 src="https://image.flaticon.com/icons/png/512/2111/2111499.png"
+                                                 alt="">
+                                        </a>
+                                        <div class=" re-text ">
+                                            <span class="font-size-12 textMuted ">Linkedin</span>
+                                        </div>
+
+                                    </div>
+                                    <div class="box m-4 bglight  corner ">
+                                        <a href="https://www.facebook.com/rohinth.rewa" target="_blank">
+                                            <img class="d-block center padding-top" width="30px"
+                                                 src="https://image.flaticon.com/icons/png/512/2111/2111398.png"
+                                                 alt="">
+                                        </a>
+                                        <div class=" re-text ">
+                                            <span class="font-size-12 textMuted ">Facebook </span>
+                                        </div>
+
+                                    </div>
+                                    <div class="box m-4 bglight  corner ">
+                                        <a href="https://twitter.com/Rohinth10014070" target="_blank">
+                                            <img class="d-block center padding-top" width="30px"
+                                                 src="https://image.flaticon.com/icons/png/512/2111/2111688.png"
+                                                 alt="">
+
+                                        </a>
+                                        <div class=" re-text ">
+                                            <span class="font-size-12  textMuted "> Twitter </span>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <h3 class="center marginTop " data-aos="zoom-out-up">Hi,I'm Roginth</h3>
+
+                <h1 data-aos="zoom-out-up"
+                    class="text-gradiant welcome-text center text-align-center display-3  p-5 ">
+                    Building a websites , <br> Developing better Graphic Design & User Interfaces. </h1>
+                <h4 class="center text-align-center" data-aos="zoom-out-up">Iam a font end Developer and a Designer
+                    from
+                    Trichy.
+                </h4>
+                <h4 class="center text-align-center text-gradiant2 py-3" data-aos="zoom-out-up">Scroll Down to Know
+                    More..
+                </h4>
+            </div>
+
+
+            <section id="animatedCv">
+                <!--animated cv -->
+                <div class="container my-5 py-4">
+                    <div class="row my-5">
+                        <div class="col-md-6">
+                            <h1 class="text-gradiant2 display-1 mobile-viwe " data-aos="fade-up">Animated</h1>
+                            <h1 class="textMuted display-4 mobile-viwe" data-aos="fade-right">cv</h1>
+                            <p class="h5 text-drak py-3 mobile-viwe" data-aos="fade-right">It's our animated cv ,It
+                                will
+                                help to know about our educational details and more..... </p>
+                        </div>
+
+                        <div class="col-md-6  drop-shadow  ">
+                            <!--youtube video-->
+                            <iframe class="youtube-video-size center mobile-viwe" data-aos="fade-up"
+                                    src="https://www.youtube.com/embed/9Ly7iJL4K_4" title="animated cv"
+                                    frameborder="0"
+                                    allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--skils-->
+
+
+            <section id=skills class=" container-fluid my-5">
+                <div class=" container my-3">
+                    <div class="row">
+                        <div class="container my-3">
+                            <h2 class="text-gradiant h1 center" id="typewriter" data-aos="fade-up">Take a look at my
+                                Skills.</h2>
+                            <p class="py-3 textMuted text-align-center" data-aos="fade-up"> These are my skills and
+                                this
+                                contains all the technologies and programming language that I have learnt until now.
+                                <br> I am constantly learing, therefore I may update this section more often.
+                            </p>
+                        </div>
+
+                        <div class="container skills-flex center my-3">
+
+                            <div class=" skill-box px-3 my-2" data-aos="fade-up ">
+                                <img src="https://img.icons8.com/fluent/50/000000/adobe-photoshop.png " />
+                                <p class="p-3 textMuted h6 ">Adobe Photoshop</p>
+                            </div>
+                            <div class=" skill-box px-3 my-2 " data-aos="fade-up">
+                                <img src="https://img.icons8.com/fluent/50/000000/adobe-illustrator.png" />
+                                <p class="p-3 textMuted h6">Adobe Illustrator</p>
+                            </div>
+                            <div class=" skill-box px-3 my-2 " data-aos="fade-up">
+                                <img src="https://img.icons8.com/fluent/50/000000/adobe-indesign.png" />
+                                <p class="p-3 textMuted h6">Adobe InDesign</p>
+                            </div>
+                            <div class=" skill-box px-3 my-2" data-aos="fade-up ">
+                                <img src="images/corel draw.svg " style="width: 30px; height: 30px;" />
+                                <p class="p-3 textMuted h6 ">CorelDraw</p>
+                            </div>
+                            <div class=" skill-box px-3 my-2 " data-aos="fade-up">
+                                <img src="https://img.icons8.com/fluent/50/000000/adobe-xd.png" />
+                                <p class="p-3 textMuted h6">Adobe XD</p>
+                            </div>
+                            <div class=" skill-box px-3 my-2 " data-aos="fade-up">
+                                <img src="https://img.icons8.com/color/50/000000/figma.png" />
+                                <p class="p-3 textMuted h6">Figma</p>
+                            </div>
+                            <div class=" skill-box px-3 my-2" data-aos="fade-up ">
+                                <img src="https://img.icons8.com/color/50/000000/blender-3d.png " />
+                                <p class="p-3 textMuted h6 ">Blender</p>
+                            </div>
+                            <div class=" skill-box px-3 my-2 " data-aos="fade-up">
+                                <img src="https://img.icons8.com/color/50/000000/html-5--v1.png" />
+                                <p class="p-3 textMuted h6">Html 5</p>
+                            </div>
+                            <div class=" skill-box px-3 my-2" data-aos="fade-up ">
+                                <img src="https://img.icons8.com/color/50/000000/css3.png " />
+                                <p class="p-3 textMuted h6 ">CSS 3</p>
+                            </div>
+                            <div class=" skill-box px-3 my-2 " data-aos="fade-up">
+                                <img src="https://img.icons8.com/color/50/000000/javascript.png" />
+                                <p class="p-3 textMuted h6">JavaScript</p>
+                            </div>
+                            <div class=" skill-box px-3 my-2" data-aos="fade-up ">
+                                <img src="https://img.icons8.com/color/50/000000/bootstrap.png " />
+                                <p class="p-3 textMuted h6 ">Bootstrap</p>
+                            </div>
+                            <div class=" skill-box px-3 my-2 " data-aos="fade-up">
+                                <img src="https://img.icons8.com/color/50/000000/react-native.png" />
+                                <p class="p-3 textMuted h6">React Js</p>
+                            </div>
+                            <div class=" skill-box px-3 my-2" data-aos="fade-up ">
+                                <img src="https://img.icons8.com/color/50/000000/solidworks.png " />
+                                <p class="p-3 textMuted h6 ">Solidworks</p>
+                            </div>
+                            <div class=" skill-box px-3 my-2 " data-aos="fade-up">
+                                <img src="images/catia.svg" />
+                                <p class="p-3 textMuted h6">catia V5</p>
+                            </div>
+                            <div class=" skill-box px-3 my-2" data-aos="fade-up ">
+                                <img src="images/nx cad.svg " />
+                                <p class="p-3 textMuted h6 ">Nx Cad</p>
+                            </div>
+                            <div class=" skill-box px-3 my-2 " data-aos="fade-up">
+                                <img src="images/creo.svg" />
+                                <p class="p-3 textMuted h6">PTC creo</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--project-->
+            <div class="container">
+                <div class="py-3 container" id="projects">
+                    <h3 class="text-gradiant center h1 " data-aos="fade-up">Projects. </h3>
+                    <p class="py-3 textMuted text-align-center" data-aos="fade-up">These are some of the fictional
+                        projects that I worked on. <br> I have created some projects that help me understand more of
+                        the
+                        technology that I use. </p>
+                </div>
+                <!--view more-->
+                <div>
+                    <div class="preview" id="img1">
+                        <img src="https://image.flaticon.com/icons/png/512/399/399274.png" class="close-icon"
+                             onclick="document.getElementById('img1').style.display='none'" alt="">
+                        <img class=" previewImage" src="images/app ui mockup.jpg" alt="app ui">
+                    </div>
+                    <div class="preview" id="img2">
+                        <img src="https://image.flaticon.com/icons/png/512/399/399274.png" class="close-icon"
+                             onclick="document.getElementById('img2').style.display='none'" alt="">
+                        <img class=" previewImage" src="images/web ui dark.jpg" alt="app ui">
+                    </div>
+                    <div class="preview" id="img3">
+                        <img src="https://image.flaticon.com/icons/png/512/399/399274.png" class="close-icon"
+                             onclick="document.getElementById('img3').style.display='none'" alt="">
+                        <img class=" previewImage" src="images/web ui dark1.jpg" alt="app ui">
+                    </div>
+                    <div class="preview" id="img4">
+                        <img src="https://image.flaticon.com/icons/png/512/399/399274.png" class="close-icon"
+                             onclick="document.getElementById('img4').style.display='none'" alt="">
+                        <img class=" previewImage" src="images/web ui.jpg" alt="app ui">
+                    </div>
+                    <div class="preview" id="img5">
+                        <img src="https://image.flaticon.com/icons/png/512/399/399274.png" class="close-icon"
+                             onclick="document.getElementById('img5').style.display='none'" alt="">
+                        <img class=" previewImage" src="images/web ui2.jpg" alt="app ui">
+                    </div>
+                    <div class="preview" id="img6">
+                        <img src="https://image.flaticon.com/icons/png/512/399/399274.png" class="close-icon"
+                             onclick="document.getElementById('img6').style.display='none'" alt="">
+                        <img class=" previewImage" src="images/wall poster.jpg" alt="app ui">
+                    </div>
+                    <div class="preview" id="img7">
+                        <img src="https://image.flaticon.com/icons/png/512/399/399274.png" class="close-icon"
+                             onclick="document.getElementById('img7').style.display='none'" alt="">
+                        <img class=" previewImage" src="images/Backup_of_poster design.jpg" alt="app ui">
+                    </div>
+                    <div class="preview" id="img8">
+                        <img src="https://image.flaticon.com/icons/png/512/399/399274.png" class="close-icon"
+                             onclick="document.getElementById('img8').style.display='none'" alt="">
+                        <img class=" previewImage" src="images/billbord.jpg" alt="app ui">
+                    </div>
+                    <div class="preview" id="img9">
+                        <img src="https://image.flaticon.com/icons/png/512/399/399274.png" class="close-icon"
+                             onclick="document.getElementById('img9').style.display='none'" alt="">
+                        <img class=" previewImage" src="images/ico logo.jpg" alt="app ui">
+                    </div>
+                    <div class="preview" id="img10">
+                        <img src="https://image.flaticon.com/icons/png/512/399/399274.png" class="close-icon"
+                             onclick="document.getElementById('img10').style.display='none'" alt="">
+                        <img class=" previewImage" src="images/illustation.svg" alt="app ui">
+                    </div>
+                    <div class="preview" id="img11">
+                        <img src="https://image.flaticon.com/icons/png/512/399/399274.png" class="close-icon"
+                             onclick="document.getElementById('img11').style.display='none'" alt="">
+                        <img class=" previewImage" src="images/mockup2 message app.jpg" alt="app ui">
+                    </div>
+                    <div class="preview" id="img12">
+                        <img src="https://image.flaticon.com/icons/png/512/399/399274.png" class="close-icon"
+                             onclick="document.getElementById('img12').style.display='none'" alt="">
+                        <img class=" previewImage" src="images/VISTING CARD.jpg" alt="app ui">
+                    </div>
+                    <div class="preview" id="img13">
+                        <img src="https://image.flaticon.com/icons/png/512/399/399274.png" class="close-icon"
+                             onclick="document.getElementById('img13').style.display='none'" alt="">
+                        <img class=" previewImage" src="images/mockup5 message app.jpg" alt="app ui">
+                    </div>
+                    <div class="preview" id="img14">
+                        <img src="https://image.flaticon.com/icons/png/512/399/399274.png" class="close-icon"
+                             onclick="document.getElementById('img14').style.display='none'" alt="">
+                        <img class=" previewImage" src="images/mockup3 message app.jpg" alt="app ui">
+                    </div>
+                    <div class="preview" id="img15">
+                        <img src="https://image.flaticon.com/icons/png/512/399/399274.png" class="close-icon"
+                             onclick="document.getElementById('img15').style.display='none'" alt="">
+                        <img class=" previewImage" src="images/mockup4 message app.jpg" alt="app ui">
+                    </div>
+                    <div class="preview" id="img16">
+                        <img src="https://image.flaticon.com/icons/png/512/399/399274.png" class="close-icon"
+                             onclick="document.getElementById('img16').style.display='none'" alt="">
+                        <img class=" previewImage1" src="images/biscut.jpg" alt="app ui">
+                    </div>
+                    <div class="preview" id="img17">
+                        <img src="https://image.flaticon.com/icons/png/512/399/399274.png" class="close-icon"
+                             onclick="document.getElementById('img17').style.display='none'" alt="">
+                        <img class=" previewImage1" src="images/chips cover2.jpg" alt="app ui">
+                    </div>
+                    <div class="preview" id="img18">
+                        <img src="https://image.flaticon.com/icons/png/512/399/399274.png" class="close-icon"
+                             onclick="document.getElementById('img18').style.display='none'" alt="">
+                        <img class=" previewImage" src="images/chocolate.jpg" alt="app ui">
+                    </div>
+                </div>
+            </div>
+            <!--background images-->
+            <div class="fixed-images blur">
+                <img id="backgroundImage" class="blur" src="images/3084793.jpg" alt="">
+                <img id="backgroundImage1" class="blur" src="images/3084793.jpg" alt="">
+                <img id="backgroundImage2" class="" src="images/3084793.jpg" alt="">
+                <!-- <img src="images/black.jpg" alt="">-->
+            </div>
+            <div class="container-fluid fill my-5" data-aos="fade-up">
+                <h1 class="center text-gradiant2 py-3">Front-End Web Development</h1>
+            </div>
+
+
+            <div class="container ">
+                <div class=" flex">
+                    <div class="p-3" data-aos="fade-up">
+                        <div class="projectCard1 my-4 ">
+                            <div class="projectCardhead1 mx-auto">
+                                <img class="ima" src="images/betterdemo2.0.png" alt="betterdemo2.0">
+                            </div>
+                            <div class="projectCardBody">
+                                <h5 class="my-2">Better Demo 2.0 <br /> (portfolio website)</h5>
+                                <div class="flex my-4">
+                                    <a class="button my-2" href="https://github.com/Rohinth248/betterdemo2.0"
+                                       target="_blank">View Code</a>
+                                    <button type="button" class="button2"
+                                            onclick="window.open(href='https://rohinth248.github.io/betterdemo2.0/','_blank')">Go
+                                        live</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-3" data-aos="fade-up">
+                        <div class="projectCard1 my-4 ">
+                            <div class="projectCardhead1 mx-auto">
+                                <img class="ima" src="images/inatagram-clone.png" alt="Instagram home clone">
+                            </div>
+                            <div class="projectCardBody">
+                                <h5 class="my-2">Instagram Home Page <br /> (Popular Website Clone)</h5>
+                                <div class="flex my-4">
+                                    <a class="button my-2" href="https://github.com/Rohinth248/instagram-home-clone"
+                                       target="_blank">View Code</a>
+                                    <button type="button" class="button2"
+                                            onclick="window.open(href='https://rohinth248.github.io/instagram-home-clone/','_blank')">Go
+                                        live</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-3" data-aos="fade-up">
+                        <div class="projectCard1 my-4 ">
+                            <div class="projectCardhead1 mx-auto">
+                                <img class="ima" src="images/betterdemo.png" alt="betterdemo">
+                            </div>
+                            <div class="projectCardBody">
+                                <h5 class="my-2">Better Demo <br /> (portfolio website)</h5>
+                                <div class="flex my-4">
+                                    <a class="button my-2" href="https://github.com/Rohinth248/bestterdemo"
+                                       target="_blank">View Code</a>
+                                    <button type="button" class="button2"
+                                            onclick="window.open(href='https://rohinth248.github.io/bestterdemo/','_blank')">Go
+                                        live</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-3" data-aos="fade-up">
+                        <div class="projectCard1 my-4 ">
+                            <div class="projectCardhead1 mx-auto">
+                                <img class="ima" src="images/designerroginth.png" alt="betterdemo2.0">
+                            </div>
+                            <div class="projectCardBody">
+                                <h5 class="my-2">Designerrohinth V1.0.1 <br /> (portfolio website)</h5>
+                                <div class="flex my-4">
+                                    <a class="button my-2" href="https://github.com/Rohinth248/designerrohinth.tk"
+                                       target="_blank">View Code</a>
+                                    <button type="button" class="button2"
+                                            onclick="window.open(href='https://rohinth248.github.io/designerrohinth.tk/','_blank')">Go
+                                        live</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-3" data-aos="fade-up">
+                        <div class="projectCard1 my-4 ">
+                            <div class="projectCardhead1 mx-auto">
+                                <img class="ima" src="images/dashboard.png" alt="betterdemo2.0">
+                            </div>
+                            <div class="projectCardBody">
+                                <h5 class="my-2">Project Gallery <br /> (image gallery website)</h5>
+                                <div class="flex my-4">
+                                    <a class="button my-2" href="https://github.com/Rohinth248/projectgallery">View
+                                        Code</a>
+                                    <button type="button" class="button2"
+                                            onclick="window.open(href='https://rohinth248.github.io/projectgallery/','_blank')">Go
+                                        live</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-3" data-aos="fade-up">
+                        <div class="projectCard1 my-4 ">
+                            <div class="projectCardhead1 mx-auto">
+                                <img class="ima" src="images/dashboard.png" alt="betterdemo2.0">
+                            </div>
+                            <div class="projectCardBody">
+                                <h5 class="my-2">Project Gallery <br /> (image gallery website)</h5>
+                                <div class="flex my-4">
+                                    <a class="button my-2" href="https://github.com/Rohinth248/projectgallery">View
+                                        Code</a>
+                                    <button type="button" class="button2"
+                                            onclick="window.open(href='https://rohinth248.github.io/projectgallery/','_blank')">Go
+                                        live</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="container-fluid fill my-5" data-aos="fade-up">
+                <h1 class="center text-gradiant2 py-3">Graphic Design</h1>
+            </div>
+            <div class="container">
+                <div class="flex">
+                    <div class="p-3" data-aos="fade-up">
+                        <div class="projectCard my-4 ">
+                            <div class="projectCardhead mx-auto">
+                                <img class="ima" src="images/app ui mockup.jpg" alt="app ui">
+                            </div>
+                            <div class="projectCardBody">
+                                <h5>App UI design</h5>
+                                <div class="flex">
+                                    <button type="button" class="button"
+                                            onclick="document.getElementById('img1').style.display='block'"
+                                            href="#">View More</button>
+                                    <button type="button" class="button2"
+                                            onclick="window.open(href='https://www.behance.net/gallery/122696951/Music-app-UI-design','_blank')">Go
+                                        live</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-3" data-aos="fade-up">
+                        <div class="projectCard my-4 ">
+                            <div class="projectCardhead mx-auto">
+                                <img class="ima" src="images/web ui dark.jpg" alt="">
+                            </div>
+                            <div class="projectCardBody">
+                                <h5>Card design</h5>
+                                <div class="flex">
+                                    <button type="button" class="button"
+                                            onclick="document.getElementById('img2').style.display='block'"
+                                            href="#">View More</button>
+                                    <button type="button" class="button2"
+                                            onclick="window.open(href='https://www.behance.net/gallery/122697991/Card-design','_blank')">Go
+                                        live</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-3" data-aos="fade-up">
+                        <div class="projectCard my-4 ">
+                            <div class="projectCardhead mx-auto">
+                                <img class="ima" src="images/web ui dark1.jpg" alt="">
+                            </div>
+                            <div class="projectCardBody">
+                                <h5>Web UI design</h5>
+                                <div class="flex">
+
+                                    <button type="button" id="btn3" class="button"
+                                            onclick="document.getElementById('img3').style.display='block'"
+                                            href="#">View More</button>
+                                    <button type="button" class="button2"
+                                            onclick="window.open(href='https://www.behance.net/gallery/123468489/web-ui-dark-theme?','_blank')">Go
+                                        live</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-3" data-aos="fade-up">
+                        <div class="projectCard my-4 ">
+                            <div class="projectCardhead mx-auto">
+                                <img class="ima" src="images/web ui.jpg" id="myImg4" alt="">
+                            </div>
+                            <div class="projectCardBody">
+                                <h5>Web UI design</h5>
+                                <div class="flex">
+
+                                    <button type="button" id="btn4" class="button"
+                                            onclick="document.getElementById('img4').style.display='block'"
+                                            href="#">View More</button>
+                                    <button type="button" class="button2"
+                                            onclick="window.open(href='https://www.behance.net/gallery/122696395/UI-design','_blank')">Go
+                                        live</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-3" data-aos="fade-up">
+                        <div class="projectCard my-4 ">
+                            <div class="projectCardhead mx-auto">
+                                <img class="ima" src="images/web ui2.jpg" id="myImg5" alt="">
+                            </div>
+                            <div class="projectCardBody">
+                                <h5>Web UI design</h5>
+                                <div class="flex">
+
+                                    <button type="button" id="btn5" class="button"
+                                            onclick="document.getElementById('img5').style.display='block'"
+                                            href="#">View More</button>
+                                    <button type="button" class="button2"
+                                            onclick="window.open(href='https://www.behance.net/gallery/122696693/UI-design','_blank')">Go
+                                        live</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-3" data-aos="fade-up">
+                        <div class="projectCard my-4 ">
+                            <div class="projectCardhead mx-auto">
+                                <img class="ima" src="images/wall poster.jpg" id="myImg5" alt="">
+                            </div>
+                            <div class="projectCardBody">
+                                <h5>Wall poster design</h5>
+                                <div class="flex">
+
+                                    <button type="button" id="btn5" class="button"
+                                            onclick="document.getElementById('img6').style.display='block'"
+                                            href="#">View More</button>
+                                    <button type="button" class="button2"
+                                            onclick="window.open(href='https://www.behance.net/gallery/122698289/Flyer-Design','_blank')">Go
+                                        live</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-3" data-aos="fade-up">
+                        <div class="projectCard my-4 ">
+                            <div class="projectCardhead mx-auto">
+                                <img class="ima" src="images/Backup_of_poster design.jpg" id="myImg5" alt="">
+                            </div>
+                            <div class="projectCardBody">
+                                <h5>Poster design</h5>
+                                <div class="flex">
+
+                                    <button type="button" id="btn5" class="button"
+                                            onclick="document.getElementById('img7').style.display='block'"
+                                            href="#">View More</button>
+                                    <button type="button" class="button2"
+                                            onclick="window.open(href='https://www.behance.net/gallery/123469003/Poster-design?','_blank')">Go
+                                        live</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-3" data-aos="fade-up">
+                        <div class="projectCard my-4 ">
+                            <div class="projectCardhead mx-auto">
+                                <img class="ima" src="images/billbord.jpg" id="myImg5" alt="">
+                            </div>
+                            <div class="projectCardBody">
+                                <h5>Billbord design</h5>
+                                <div class="flex">
+
+                                    <button type="button" id="btn5" class="button"
+                                            onclick="document.getElementById('img8').style.display='block'"
+                                            href="#">View More</button>
+                                    <button type="button" class="button2"
+                                            onclick="window.open(href='https://www.behance.net/gallery/122698635/billboard-design','_blank')">Go
+                                        live</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-3" data-aos="fade-up">
+                        <div class="projectCard my-4 ">
+                            <div class="projectCardhead mx-auto">
+                                <img class="ima" src="images/ico logo.jpg" id="myImg5" alt="">
+                            </div>
+                            <div class="projectCardBody">
+                                <h5>Logo design</h5>
+                                <div class="flex">
+
+                                    <button type="button" id="btn5" class="button"
+                                            onclick="document.getElementById('img9').style.display='block'"
+                                            href="#">View More</button>
+                                    <button type="button" class="button2"
+                                            onclick="window.open(href='https://www.behance.net/gallery/122699005/Logo-Design-for-ico-chocolate','_blank')">Go
+                                        live</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-3" data-aos="fade-up">
+                        <div class="projectCard my-4 ">
+                            <div class="projectCardhead mx-auto">
+                                <img class="ima" src="images/illustation.svg" id="myImg5" alt="">
+                            </div>
+                            <div class="projectCardBody">
+                                <h5>illustation</h5>
+                                <div class="flex">
+
+                                    <button type="button" id="btn5" class="button"
+                                            onclick="document.getElementById('img10').style.display='block'"
+                                            href="#">View More</button>
+                                    <button type="button" class="button2"
+                                            onclick="window.open(href='https://www.behance.net/gallery/122697533/Illustration','_blank')">Go
+                                        live</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-3" data-aos="fade-up">
+                        <div class="projectCard my-4 ">
+                            <div class="projectCardhead mx-auto">
+                                <img class="ima" src="images/mockup2 message app.jpg" id="myImg5" alt="">
+                            </div>
+                            <div class="projectCardBody">
+                                <h5>App ui design</h5>
+                                <div class="flex">
+
+                                    <button type="button" id="btn5" class="button"
+                                            onclick="document.getElementById('img11').style.display='block'"
+                                            href="#">View More</button>
+                                    <button type="button" class="button2"
+                                            onclick="window.open(href='https://www.behance.net/gallery/123466999/Massage-app-UI-design?share=1','_blank')">Go
+                                        live</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-3" data-aos="fade-up">
+                        <div class="projectCard my-4 ">
+                            <div class="projectCardhead mx-auto">
+                                <img class="ima" src="images/VISTING CARD.jpg" id="myImg5" alt="">
+                            </div>
+                            <div class="projectCardBody">
+                                <h5>Visting design</h5>
+                                <div class="flex">
+
+                                    <button type="button" id="btn5" class="button"
+                                            onclick="document.getElementById('img12').style.display='block'"
+                                            href="#">View More</button>
+                                    <button type="button" class="button2"
+                                            onclick="window.open(href='https://www.behance.net/gallery/123469409/visiting-card-design?','_blank')">Go
+                                        live</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-3" data-aos="fade-up">
+                        <div class="projectCard my-4 ">
+                            <div class="projectCardhead mx-auto">
+                                <img class="ima" src="images/mockup5 message app.jpg" id="myImg5" alt="">
+                            </div>
+                            <div class="projectCardBody">
+                                <h5>App ui design</h5>
+                                <div class="flex">
+
+                                    <button type="button" id="btn5" class="button"
+                                            onclick="document.getElementById('img13').style.display='block'"
+                                            href="#">View More</button>
+                                    <button type="button" class="button2"
+                                            onclick="window.open(href='https://www.behance.net/gallery/123466999/Massage-app-UI-design?share=1','_blank')">Go
+                                        live</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-3" data-aos="fade-up">
+                        <div class="projectCard my-4 ">
+                            <div class="projectCardhead mx-auto">
+                                <img class="ima" src="images/mockup3 message app.jpg" id="myImg5" alt="">
+                            </div>
+                            <div class="projectCardBody">
+                                <h5>App ui design</h5>
+                                <div class="flex">
+
+                                    <button type="button" id="btn5" class="button"
+                                            onclick="document.getElementById('img14').style.display='block'"
+                                            href="#">View More</button>
+                                    <button type="button" class="button2"
+                                            onclick="window.open(href='https://www.behance.net/gallery/123466999/Massage-app-UI-design?share=1','_blank')">Go
+                                        live</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-3" data-aos="fade-up">
+                        <div class="projectCard my-4 ">
+                            <div class="projectCardhead mx-auto">
+                                <img class="ima" src="images/mockup4 message app.jpg" id="myImg5" alt="">
+                            </div>
+                            <div class="projectCardBody">
+                                <h5>App ui design</h5>
+                                <div class="flex">
+
+                                    <button type="button" id="btn5" class="button"
+                                            onclick="document.getElementById('img15').style.display='block'"
+                                            href="#">View More</button>
+                                    <button type="button" class="button2"
+                                            onclick="window.open(href='https://www.behance.net/gallery/123466999/Massage-app-UI-design?share=1','_blank')">Go
+                                        live</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-3" data-aos="fade-up">
+                        <div class="projectCard my-4 ">
+                            <div class="projectCardhead mx-auto">
+                                <img class="ima" src="images/biscuits.jpg" id="myImg5" alt="">
+                            </div>
+                            <div class="projectCardBody">
+                                <h5>Product design</h5>
+                                <div class="flex">
+
+                                    <button type="button" id="btn5" class="button"
+                                            onclick="document.getElementById('img16').style.display='block'"
+                                            href="#">View More</button>
+                                    <button type="button" class="button2"
+                                            onclick="window.open(href='https://www.behance.net/gallery/122699265/Product-Ad-Design-With-Mockup','_blank')">Go
+                                        live</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-3" data-aos="fade-up">
+                        <div class="projectCard my-4 ">
+                            <div class="projectCardhead mx-auto">
+                                <img class="ima" src="images/chips.jpg" id="myImg5" alt="">
+                            </div>
+                            <div class="projectCardBody">
+                                <h5>Product design</h5>
+                                <div class="flex">
+
+                                    <button type="button" id="btn5" class="button"
+                                            onclick="document.getElementById('img17').style.display='block'"
+                                            href="#">View More</button>
+                                    <button type="button" class="button2"
+                                            onclick="window.open(href='https://www.behance.net/gallery/122697187/Product-Ad-Design-With-Mockup','_blank')">Go
+                                        live</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-3" data-aos="fade-up">
+                        <div class="projectCard my-4 ">
+                            <div class="projectCardhead mx-auto">
+                                <img class="ima" src="images/chocolate.jpg" id="myImg5" alt="">
+                            </div>
+                            <div class="projectCardBody">
+                                <h5>Product design</h5>
+                                <div class="flex">
+
+                                    <button type="button" id="btn5" class="button"
+                                            onclick="document.getElementById('img18').style.display='block'"
+                                            href="#">View More</button>
+                                    <button type="button" class="button2"
+                                            onclick="window.open(href='https://www.behance.net/gallery/123469409/visiting-card-design?','_blank')">Go
+                                        live</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <section id="aboutUs">
+                <div class="container py-5">
+                    <h3 class="text-gradiant center h1 py-3 " data-aos="fade-up">About me. </h3>
+                    <div class="row">
+                        <div class="col-md-8 center">
+
+                            <h6 class="py-3 textMuted text-align-justify h6" data-aos="fade-up">
+                                Hi, I am Roginth B . I am a self-taught. Front end web Developer, Graphic Designer
+                                and a
+                                Cad Designer from Trichy.
+                                <br>
+                                <br> I more knowledge about the Graphic design as well as Web Design. Since I
+                                started to
+                                learn code, I have been learning more and them into building projects on my own
+                                improve
+                                my knowledge and understanding on the technologies
+                                I use.
+                                <br> <br> I also like to explore and learn new technologies and become a much better
+                                developer as well as designer. Nowadays,Iam learning React js to build websites
+                                faster.
+                                This helps me to expanding my skillset.
+                                <br> <br> If you want to get touch with me, send me a <a
+                                   class="text-gradiant textdecoration h2"
+                                   href=" https://services.tochat.be/n/9108525028537">message</a> and I will get
+                                back
+                                with you soon.
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!--message icon-->
+        <div class="message-icon" title="Chat With Me">
+            <a href="https://services.tochat.be/n/9108525028537">
+                <img src="https://image.flaticon.com/icons/png/512/3593/3593650.png" alt="message">
+            </a>
+        </div>
+        <!--footer-->
+        <footer class="bd-footer py-5 mt-5 bg-light text-muted">
+            <div class="container py-5">
+                <div class="row">
+                    <div class="col-lg-3 mb-3">
+                        <img class="p-1" src="images\new logo for website.svg" width="32px" height="32px" alt="">
+                        <a class="d-inline-flex align-items-center mb-2 link-dark text-decoration-none" href="#"
+                           aria-label="">
+                            <span class="fs-5 text-muted">Roginth B</span>
+                        </a>
+                        <ul class="list-unstyled small text-muted">
+                            <li class="mb-2">Designed and built with all the love in the world by the <a
+                                   href="#">Roginth </a> with the help of HTML, CSS, Js, Bootstrap,.</li>
+
+                            <li class="mb-2">Code licensed By Roginth @ 2021.</li>
+                            <li class="mb-2">Currently V2.0.1</li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-lg-2 offset-lg-1 mb-3">
+                        <h5>Links</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><a href="#">Home</a></li>
+                            <li class="mb-2"><a href="#skills">Skills</a></li>
+                            <li class="mb-2"><a href="#projects">Projects</a></li>
+                            <li class="mb-2"><a href="#aboutUs">About me</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="col-6 col-lg-2 mb-3">
+                        <h5>Social Media</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><a href="https://www.facebook.com/rohinth.rewa"
+                                   target="_blank">Facebook</a></li>
+                            <li class="mb-2"><a href="https://www.instagram.com/roginth_b/?hl=en"
+                                   target="_blank">Instagram</a></li>
+                            <li class="mb-2"><a href="https://www.linkedin.com/in/rohinth-b-35ba211a8/"
+                                   target="_blank">Linked
+                                    In</a></li>
+                            <li class="mb-2"><a href="https://twitter.com/Rohinth10014070"
+                                   target="_blank">Twitter</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-lg-2 mb-3">
+                        <h5>Projects</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><a href="https://github.com/Rohinth248/Rohinth248/" target="_blank">Web
+                                    Development</a></li>
+                            <li class="mb-2"><a href="https://www.behance.net/rohinthrewa" target="_blank">Graphic
+                                    Design</a></li>
+                            <li class="mb-2"><a href="https://grabcad.com/roginth.b-1" target="_blank">Cad
+                                    Design</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-lg-2 mb-3">
+                        <h5>Resume</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><a
+                                   href="https://drive.google.com/file/d/1biwdJAw0HQ9B5QgT5vft5qSDz_Ne-1Wo/view?usp=sharing"
+                                   target="_blank">See my resume</a></li>
+                            <li class="mb-2"><a
+                                   href="https://drive.google.com/file/d/1biwdJAw0HQ9B5QgT5vft5qSDz_Ne-1Wo/view?usp=sharing"
+                                   target="_blank">Download my resume</a></li>
+
+
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+
+
+
+
+        <script src="./script.js"></script>
+        <script src="./particles.js"></script>
+        <script src="./particles.min.js"></script>
+        <script src="./app.js"></script>
+        <!-- Optional JavaScript; choose one of the two! -->
+
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19mdozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+                crossorigin="anonymous"></script>
+
+        <!-- Option 2: Separate Popper and Bootstrap JS -->
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+                integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+                crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+                integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
+                crossorigin="anonymous"></script>
+        <!--scroll animation aos-->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+        <!--mdooth scroll-->
+        <!--All animations will take exactly 500ms-->
+        <script>
+            AOS.init( {
+                duration: 1000,
+            } );
+        </script>
+        <!--wathsapp link-->
+        <!-- <script defer src="https://widget.tochat.be/bundle.js?key=274911d9-6705-4fe6-b66b-73ccf017a3d8"></script> -->
+
+        <!--jQuery-->
+        <script src="https://code.jquery.com/jquery-3.6.0.js" "></script>
+    </body>
+    
+    
+</html>
